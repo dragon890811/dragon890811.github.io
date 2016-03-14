@@ -1,0 +1,173 @@
+$theme : #0471AE;
+
+body {
+  font-family:-apple-system,’Lucida Grande’,
+  ‘Helvetica Neue’,’Hiragino Kaku Gothic ProN’,
+  ‘游ゴシック’,’メイリオ’,meiryo,sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  overflow: hidden;
+  padding: 4px;
+  background: $theme;
+  img {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  h1 {
+    float: left;
+    padding-left: 0px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #fff;
+  }
+}
+
+article {
+  padding: 16px;
+  color: #666;
+  header {
+    .info {
+      overflow: hidden;
+      .category {
+        float: left;
+        padding: 4px;
+        display: block;
+        text-align: center;
+        line-height: 16px;
+        font-size: 12px;
+        color: #fff;
+        background: $theme
+      }
+      .date {
+        float: left;
+        padding-left: 8px;
+        line-height: 24px;
+        font-size: 12px;
+        color: #aaa;
+      }
+    }
+    h1 {
+      padding: 16px 0;
+      font-size: 20px;
+      line-height: 1.4;
+      color: #333;
+    }
+    .photo {
+      margin: 0 -16px 16px;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .pharmacy {
+      font-size: 14px;
+      font-weight: bold;
+      color: $theme;
+    }
+    .pharmacist {
+      font-size: 14px;
+      .post {
+        padding-right: 8px;
+        font-weight: bold;
+      }
+      .name {
+        font-size: 18px;
+        color: #333;
+      }
+    }
+    .pharmacist-desc {
+      line-height: 1.5;
+      font-size: 12px;
+      color: #aaa;
+    }
+  }
+  h2 {
+    margin: 24px 0 16px;
+    padding: .75em 0;
+    border-top: 3px solid $theme;
+    border-bottom: 3px solid $theme;
+    font-size: 16px;
+  }
+  h3 {
+    margin: 12px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: $theme;
+  }
+  p {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #666;
+  }
+  img {
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  footer {
+    margin-top: 24px;
+    .tags {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        display: inline-block;
+        margin: 0 0 .3em 1em;
+        padding: 0;
+        a {
+          position: relative;
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 1em;
+          background-color: $theme;
+          border-radius: 0 3px 3px 0;
+          color: #fff;
+          font-size: 13px;
+          text-decoration: none;
+          -webkit-transition: .2s;
+          transition: .2s;
+          &::before {
+            position: absolute;
+            top: 0;
+            left: -15px;
+            content: '';
+            width: 0;
+            height: 0;
+            border-color: transparent $theme transparent transparent;
+            border-style: solid;
+            border-width: 15px 15px 15px 0;
+            -webkit-transition: .2s;
+            transition: .2s;
+          }
+          &::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 6px;
+            height: 6px;
+            margin-top: -3px;
+            background-color: #fff;
+            border-radius: 100%;
+          }
+        }
+        span {
+          display: block;
+          max-width: 100px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

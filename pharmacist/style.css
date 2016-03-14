@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body {
+  font-family: -apple-system,’Lucida Grande’, ‘Helvetica Neue’,’Hiragino Kaku Gothic ProN’, ‘游ゴシック’,’メイリオ’,meiryo,sans-serif;
+  box-sizing: border-box; }
+
+nav {
+  overflow: hidden;
+  padding: 4px;
+  background: #0471AE; }
+  nav img {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px; }
+  nav h1 {
+    float: left;
+    padding-left: 0px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #fff; }
+
+article {
+  padding: 16px;
+  color: #666; }
+  article header .info {
+    overflow: hidden; }
+    article header .info .category {
+      float: left;
+      padding: 4px;
+      display: block;
+      text-align: center;
+      line-height: 16px;
+      font-size: 12px;
+      color: #fff;
+      background: #0471AE; }
+    article header .info .date {
+      float: left;
+      padding-left: 8px;
+      line-height: 24px;
+      font-size: 12px;
+      color: #aaa; }
+  article header h1 {
+    padding: 16px 0;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #333; }
+  article header .photo {
+    margin: 0 -16px 16px; }
+    article header .photo img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  article header .pharmacy {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0471AE; }
+  article header .pharmacist {
+    font-size: 14px; }
+    article header .pharmacist .post {
+      padding-right: 8px;
+      font-weight: bold; }
+    article header .pharmacist .name {
+      font-size: 18px;
+      color: #333; }
+  article header .pharmacist-desc {
+    line-height: 1.5;
+    font-size: 12px;
+    color: #aaa; }
+  article h2 {
+    margin: 24px 0 16px;
+    padding: .75em 0;
+    border-top: 3px solid #0471AE;
+    border-bottom: 3px solid #0471AE;
+    font-size: 16px; }
+  article h3 {
+    margin: 12px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0471AE; }
+  article p {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #666; }
+  article img {
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+    height: auto; }
+  article footer {
+    margin-top: 24px; }
+    article footer .tags {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      article footer .tags li {
+        display: inline-block;
+        margin: 0 0 .3em 1em;
+        padding: 0; }
+        article footer .tags li a {
+          position: relative;
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 1em;
+          background-color: #0471AE;
+          border-radius: 0 3px 3px 0;
+          color: #fff;
+          font-size: 13px;
+          text-decoration: none;
+          -webkit-transition: .2s;
+          transition: .2s; }
+          article footer .tags li a::before {
+            position: absolute;
+            top: 0;
+            left: -15px;
+            content: '';
+            width: 0;
+            height: 0;
+            border-color: transparent #0471AE transparent transparent;
+            border-style: solid;
+            border-width: 15px 15px 15px 0;
+            -webkit-transition: .2s;
+            transition: .2s; }
+          article footer .tags li a::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 6px;
+            height: 6px;
+            margin-top: -3px;
+            background-color: #fff;
+            border-radius: 100%; }
+        article footer .tags li span {
+          display: block;
+          max-width: 100px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+
+/*# sourceMappingURL=style.css.map */
