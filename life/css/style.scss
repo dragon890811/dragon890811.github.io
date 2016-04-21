@@ -1,5 +1,285 @@
+//@import url(https://fonts.googleapis.com/css?family=Lato:400,100);
+//@import url(https://fonts.googleapis.com/css?family=Karla);
+//@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+/********************
+ * variable
+ ********************/
+
+$black : #333;
+$gray : #aaa;
+$blue : #2196F3;
+//$blue : #3bafda;
+//$blue : #5d9cec;
+//$blue : #4a89dc;
+//$blue : #304FFE;
+
+$big : 20px;
+$medium : 14px;
+$small : 12px;
+
+/********************
+ * common
+ ********************/
+
 body {
-  font-family:-apple-system,’Lucida Grande’,
+  font-family:'Varela Round', -apple-system,’Lucida Grande’,
   ‘Helvetica Neue’,’Hiragino Kaku Gothic ProN’,
   ‘游ゴシック’,’メイリオ’,meiryo,sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  word-wrap: break-word;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  .logo {
+    margin: 0 auto;
+    padding: 8px 0;
+    display: block;
+    width: 120px;
+    //img {
+    //  width: 100%;
+    //  height: auto;
+    //}
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  .top-img {
+    //img {
+    //  width: 100%;
+    //  height: auto;
+    //}
+  }
+  .content {
+    padding: 0 16px;
+    .section {
+      margin-bottom: 48px;
+      .subject {
+        margin-bottom: 16px;
+        padding: 16px 0 16px 16px;
+        display: block;
+        border-left: 8px solid $blue;
+        font-size: $medium;
+        color: $black;
+      }
+      .subject + .post {
+        margin-top: -16px;
+      }
+      .posts {
+        .post {
+          overflow: hidden;
+          padding: 16px 0;
+          display: block;
+          border-bottom: 1px solid #eee;
+          text-decoration: none;
+          &:first-child {
+            margin-top: -16px;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+          .thumb {
+            float: left;
+            width: 120px;
+            height: 120px;
+          }
+          .info {
+            overflow: hidden;
+            padding-left: 16px;
+            .category {
+              margin-bottom: 8px;
+              padding: 2px 0;
+              display: block;
+              width: 100px;
+              text-align: center;
+              font-size: $small;
+              background: $blue;
+              color: white;
+            }
+            .title {
+              margin-bottom: 8px;
+              height: 64px;
+              line-height: 22px;
+              font-size: $medium;
+              color: $black;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+            }
+            .date {
+              display: block;
+              line-height: 16px;
+              font-size: $small;
+              color: $gray;
+            }
+          }
+        }
+      }
+      .more {
+        display: block;
+        line-height: 48px;
+        text-decoration: none;
+        font-size: $medium;
+        color: $blue;
+        &:before {
+          padding-right: 8px;
+          content: "\f101";
+          font-size: $big;
+          font-family: FontAwesome;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 48px 0;
+  background: #f3f3f3;
+  .footer-title {
+    margin-bottom: 24px;
+    display: block;
+    text-align: center;
+    font-size: $big;
+    font-weight: bold;
+    color: $black;
+  }
+  .sns {
+    margin: -24px auto 24px;
+    overflow: hidden;
+    width: 240px;
+    a {
+      float: left;
+      display: block;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 32px;
+      color: $black;
+    }
+  }
+  .menu {
+    overflow: hidden;
+    margin: -13px auto 48px;
+    width: 270px;
+    a {
+      float: left;
+      display: block;
+      width: 90px;
+      border-width: 1px 0;
+      border-style: solid;
+      line-height: 48px;
+      text-align: center;
+      text-decoration: none;
+      font-size: $medium;
+      font-weight: bold;
+      color: $black;
+    }
+  }
+  .copyright {
+    display: block;
+    text-align: center;
+    font-size: $small;
+    color: $gray;
+  }
+}
+
+/********************
+ * salon
+ ********************/
+
+.content {
+  .action-btn {
+    margin: 0 auto 48px;
+    display: block;
+    width: 240px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    font-size: $medium;
+    color: white;
+    background: $blue;
+  }
+  .salon-head {
+    overflow: hidden;
+    padding: 16px 0;
+    .logo {
+      float: left;
+      width: 64px;
+      height: 64px;
+    }
+    .info {
+      overflow: hidden;
+      padding-left: 16px;
+      .salon-name {
+        line-height: 40px;
+        letter-spacing: 0.15em;
+        font-size: $big;
+        color: $black;
+      }
+      .salon-location {
+        line-height: 24px;
+        font-size: $medium;
+        color: $gray;
+        &:before {
+          padding-right: 8px;
+          content: "\f041";
+          font-size: $big;
+          font-family: FontAwesome;
+        }
+      }
+    }
+  }
+  .salon-appeal {
+    .image {
+      margin-bottom: 16px;
+    }
+    .answer {
+      display: block;
+      font-size: $medium;
+      color: $black;
+    }
+  }
+  table {
+    margin-bottom: 48px;
+    width: 100%;
+    line-height: 48px;
+    font-size: $medium;
+    tbody {
+      tr {
+        th {
+          text-align: center;
+          background: $blue;
+          color: white;
+        }
+        td {
+          border-bottom: 1px solid #eee;
+          color: $black;
+          &:first-child {
+            padding-left: 16px;
+            width: 40%;
+            color: $gray;
+          }
+          .homepage {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
 }
